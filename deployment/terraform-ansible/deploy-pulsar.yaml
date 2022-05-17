@@ -18,7 +18,7 @@
 #
 
 - name: Pulsar setup
-  hosts: zookeeper, bookie, broker, proxy
+  hosts: zookeeper*, bookie, broker, proxy
   connection: ssh
   become: true
   tasks:
@@ -144,7 +144,7 @@
 #        - debezium-postgres
 #        - dynamodb
 #        - elastic-search
-#        - file
+        - file
 #        - flume
 #        - hbase
 #        - hdfs2

@@ -22,8 +22,8 @@
   connection: ssh
   become: true
   tasks:
-    - name: Set performance profile
-      command: tuned-adm profile latency-performance
+    # - name: Set performance profile
+    #   command: tuned-adm profile latency-performance
     - name: Format disks
       filesystem:
          fstype: xfs
